@@ -1,9 +1,6 @@
 package ru.alex_malishev.java.medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * We are given a linked list with head as the first node.  Let's number the nodes in the list: node_1, node_2, node_3, ... etc.
@@ -48,7 +45,6 @@ public class NextGreaterNodeInLinkedList {
 
     public int[] nextLargerNodes(ListNode head) {
         ArrayList<Integer> list = new ArrayList<>();
-
         while (head != null){
             ListNode node = head;
             while (node.next != null){
@@ -60,6 +56,32 @@ public class NextGreaterNodeInLinkedList {
             }
             if (node.val == head.val) list.add(0);
             head = head.next;
+        }
+        int[] result = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            result[i] = list.get(i);
+        }
+        return result;
+    }
+
+    public int[] nextLargerNodesStack(ListNode head){
+        ArrayList<Integer> list = new ArrayList<>();
+        Stack<Integer> stack = new Stack<>();
+        int index = 0;
+
+        while (head != null){
+            list.add(head.val);
+            while (!stack.isEmpty() && list.get(stack.peek()) < head.val){
+                list.set(stack.pop(), head.val);
+            }
+
+            stack.push(index);
+            index++;
+            head = head.next;
+        }
+
+        while (!stack.isEmpty()){
+            list.set(stack.pop(), 0);
         }
         int[] result = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
