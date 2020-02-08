@@ -1,5 +1,7 @@
 package ru.alex_malishev.medium;
 
+import ru.alex_malishev.base.linkedlist.ListNode;
+
 import java.util.HashSet;
 
 /**
@@ -34,14 +36,6 @@ import java.util.HashSet;
  */
 public class LinkedListComponents {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public int numComponents(ListNode head, int[] G) {
         HashSet<Integer> set = new HashSet<>();

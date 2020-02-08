@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.
@@ -10,15 +12,6 @@ package ru.alex_malishev.easy;
  * Explanation: (101) in base 2 = (5) in base 10
  */
 public class ConvertBinaryNumberLinkedListToInteger {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public int getDecimalValue(ListNode head) {
         int val = 0;

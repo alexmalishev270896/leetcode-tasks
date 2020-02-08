@@ -1,5 +1,7 @@
 package ru.alex_malishev.medium;
 
+import ru.alex_malishev.base.linkedlist.ListNode;
+
 import java.util.*;
 
 /**
@@ -34,14 +36,6 @@ import java.util.*;
  */
 public class NextGreaterNodeInLinkedList {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public int[] nextLargerNodes(ListNode head) {
         ArrayList<Integer> list = new ArrayList<>();

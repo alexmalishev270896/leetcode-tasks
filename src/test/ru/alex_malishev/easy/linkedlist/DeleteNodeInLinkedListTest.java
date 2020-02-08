@@ -1,7 +1,8 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -20,11 +21,11 @@ public class DeleteNodeInLinkedListTest {
         int i = 0;
         int[] arr = new int[]{4, 5, 1, 9};
         int[] expected = new int[] {4,1,9};
-        DeleteNodeInLinkedList.ListNode head = new DeleteNodeInLinkedList.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        DeleteNodeInLinkedList.ListNode node = head;
+        ListNode node = head;
         while (i < arr.length){
-            node.next = new DeleteNodeInLinkedList.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }

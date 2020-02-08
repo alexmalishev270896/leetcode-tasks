@@ -1,7 +1,8 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -17,14 +18,14 @@ public class MergeTwoSortedListsTest {
     @Test
     public void mergeTwoLists() {
 
-        MergeTwoSortedLists.ListNode head1 = new MergeTwoSortedLists.ListNode(-9);
-        head1.next = new MergeTwoSortedLists.ListNode(3);
-        MergeTwoSortedLists.ListNode head2 = new MergeTwoSortedLists.ListNode(5);
-        head2.next = new MergeTwoSortedLists.ListNode(7);
+        ListNode head1 = new ListNode(-9);
+        head1.next = new ListNode(3);
+        ListNode head2 = new ListNode(5);
+        head2.next = new ListNode(7);
 
         int[] expected = new int[]{-9, 3, 5, 7};
         int[] actual = new int[expected.length];
-        MergeTwoSortedLists.ListNode result = mergeTwoSortedLists.mergeTwoLists(head1, head2);
+        ListNode result = mergeTwoSortedLists.mergeTwoLists(head1, head2);
         int i = 0;
         while (result != null){
             actual[i++] = result.val;

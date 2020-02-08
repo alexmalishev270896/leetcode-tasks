@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
@@ -30,15 +32,6 @@ package ru.alex_malishev.easy;
  * Result: [4, 1, 9]
  */
 public class DeleteNodeInLinkedList {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public void deleteNode(ListNode node) {
         node.val = node.next.val;

@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Given a non-empty, singly linked list with head node head, return a middle node of linked list.
@@ -26,15 +28,6 @@ package ru.alex_malishev.easy;
  * The number of nodes in the given list will be between 1 and 100.
  */
 public class MiddleOfLinkedList {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode middleNode(ListNode head) {
         ListNode fast = head;

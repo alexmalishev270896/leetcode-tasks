@@ -2,6 +2,7 @@ package ru.alex_malishev.medium;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -21,11 +22,11 @@ public class LinkedListComponentsTest {
         int[] arr = new int[]{0, 1, 2, 3};
         int[] G = new int[]{0, 1, 3};
         int res = 2;
-        LinkedListComponents.ListNode head = new LinkedListComponents.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        LinkedListComponents.ListNode node = head;
+        ListNode node = head;
         while (i < 4){
-            node.next = new LinkedListComponents.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }
@@ -40,11 +41,11 @@ public class LinkedListComponentsTest {
         int[] arr = new int[]{0, 1, 2, 3, 4};
         int[] G = new int[]{0, 3, 1, 4};
         int res = 2;
-        LinkedListComponents.ListNode head = new LinkedListComponents.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        LinkedListComponents.ListNode node = head;
+        ListNode node = head;
         while (i < arr.length){
-            node.next = new LinkedListComponents.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }
@@ -59,11 +60,11 @@ public class LinkedListComponentsTest {
         int[] arr = new int[]{0, 1, 2};
         int[] G = new int[]{0, 2};
         int res = 2;
-        LinkedListComponents.ListNode head = new LinkedListComponents.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        LinkedListComponents.ListNode node = head;
+        ListNode node = head;
         while (i < arr.length){
-            node.next = new LinkedListComponents.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }

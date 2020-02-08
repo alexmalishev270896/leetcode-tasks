@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Given a linked list, determine if it has a cycle in it.
@@ -22,16 +24,6 @@ package ru.alex_malishev.easy;
  * Explanation: There is no cycle in the linked list.
  */
 public class LinkedListCycle {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
 
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;

@@ -1,10 +1,8 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -28,17 +26,17 @@ public class LinkedListCycleTest {
 
         int[] input = new int[]{3, 2, 0, -4};
         int pos = 1;
-        LinkedListCycle.ListNode head = null;
-        LinkedListCycle.ListNode tail = null;
-        LinkedListCycle.ListNode cycle = null;
+        ListNode head = null;
+        ListNode tail = null;
+        ListNode cycle = null;
 
         int i = 0;
         while (i < input.length){
             if (head == null){
-                head = new LinkedListCycle.ListNode(input[i]);
+                head = new ListNode(input[i]);
                 tail = head;
             }else {
-                tail.next = new LinkedListCycle.ListNode(input[i]);
+                tail.next = new ListNode(input[i]);
                 tail = tail.next;
             }
             if (i == pos) cycle = tail;
@@ -59,17 +57,17 @@ public class LinkedListCycleTest {
 
         int[] input = new int[]{1, 2};
         int pos = 0;
-        LinkedListCycle.ListNode head = null;
-        LinkedListCycle.ListNode tail = null;
-        LinkedListCycle.ListNode cycle = null;
+        ListNode head = null;
+        ListNode tail = null;
+        ListNode cycle = null;
 
         int i = 0;
         while (i < input.length){
             if (head == null){
-                head = new LinkedListCycle.ListNode(input[i]);
+                head = new ListNode(input[i]);
                 tail = head;
             }else {
-                tail.next = new LinkedListCycle.ListNode(input[i]);
+                tail.next = new ListNode(input[i]);
                 tail = tail.next;
             }
             if (i == pos) cycle = tail;
@@ -90,17 +88,17 @@ public class LinkedListCycleTest {
 
         int[] input = new int[]{1};
         int pos = -1;
-        LinkedListCycle.ListNode head = null;
-        LinkedListCycle.ListNode tail = null;
-        LinkedListCycle.ListNode cycle = null;
+        ListNode head = null;
+        ListNode tail = null;
+        ListNode cycle = null;
 
         int i = 0;
         while (i < input.length){
             if (head == null){
-                head = new LinkedListCycle.ListNode(input[i]);
+                head = new ListNode(input[i]);
                 tail = head;
             }else {
-                tail.next = new LinkedListCycle.ListNode(input[i]);
+                tail.next = new ListNode(input[i]);
                 tail = tail.next;
             }
             if (i == pos) cycle = tail;

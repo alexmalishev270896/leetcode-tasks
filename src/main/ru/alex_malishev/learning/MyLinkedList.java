@@ -5,7 +5,7 @@ public class MyLinkedList {
     private ListNode mHead = null;
     private ListNode mTail = null;
 
-    public static class ListNode {
+    static class ListNode {
         int val;
         ListNode prev = null;
         ListNode next = null;

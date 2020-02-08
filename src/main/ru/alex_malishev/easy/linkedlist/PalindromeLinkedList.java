@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import java.util.Stack;
 
@@ -32,15 +34,6 @@ import java.util.Stack;
  * 5. If compared values are not equals finish the iteration and return false, otherwise continue and if stack is empty return true
  */
 public class PalindromeLinkedList {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;

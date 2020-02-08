@@ -1,7 +1,8 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -19,10 +20,10 @@ public class MiddleOfLinkedListTest {
 
         int i = 2;
 
-        MiddleOfLinkedList.ListNode head = new MiddleOfLinkedList.ListNode(1);
-        MiddleOfLinkedList.ListNode node = head;
+        ListNode head = new ListNode(1);
+        ListNode node = head;
         while (i <= 5){
-            node.next = new MiddleOfLinkedList.ListNode(i);
+            node.next = new ListNode(i);
             node = node.next;
             i++;
         }
@@ -36,10 +37,10 @@ public class MiddleOfLinkedListTest {
 
         int i = 2;
 
-        MiddleOfLinkedList.ListNode head = new MiddleOfLinkedList.ListNode(1);
-        MiddleOfLinkedList.ListNode node = head;
+        ListNode head = new ListNode(1);
+        ListNode node = head;
         while (i <= 6){
-            node.next = new MiddleOfLinkedList.ListNode(i);
+            node.next = new ListNode(i);
             node = node.next;
             i++;
         }

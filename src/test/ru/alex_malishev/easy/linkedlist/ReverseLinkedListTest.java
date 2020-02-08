@@ -1,7 +1,8 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -19,11 +20,11 @@ public class ReverseLinkedListTest {
         int i = 0;
         int[] arr = new int[]{0, 1, 2, 3, 4, 5};
         int[] res = new int[]{5, 4, 3, 2, 1, 0};
-        ReverseLinkedList.ListNode head = new ReverseLinkedList.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        ReverseLinkedList.ListNode node = head;
+        ListNode node = head;
         while (i < arr.length){
-            node.next = new ReverseLinkedList.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }
@@ -43,11 +44,11 @@ public class ReverseLinkedListTest {
         int i = 0;
         int[] arr = new int[]{0, 1, 2, 3, 4, 5};
         int[] res = new int[]{5, 4, 3, 2, 1, 0};
-        ReverseLinkedList.ListNode head = new ReverseLinkedList.ListNode(arr[i]);
+        ListNode head = new ListNode(arr[i]);
         i++;
-        ReverseLinkedList.ListNode node = head;
+        ListNode node = head;
         while (i < arr.length){
-            node.next = new ReverseLinkedList.ListNode(arr[i]);
+            node.next = new ListNode(arr[i]);
             node = node.next;
             i++;
         }

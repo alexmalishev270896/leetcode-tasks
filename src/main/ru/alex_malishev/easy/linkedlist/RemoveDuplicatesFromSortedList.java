@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
@@ -26,15 +28,6 @@ package ru.alex_malishev.easy;
  * 3. Return head node
  */
 public class RemoveDuplicatesFromSortedList {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) return null;

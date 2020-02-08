@@ -1,4 +1,6 @@
-package ru.alex_malishev.easy;
+package ru.alex_malishev.easy.linkedlist;
+
+import ru.alex_malishev.base.linkedlist.ListNode;
 
 /**
  * Reverse a singly linked list.
@@ -12,15 +14,6 @@ package ru.alex_malishev.easy;
  * A linked list can be reversed either iteratively or recursively. Could you implement both?
  */
 public class ReverseLinkedList {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) return head;
