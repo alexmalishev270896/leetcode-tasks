@@ -3,6 +3,7 @@ package ru.alex_malishev.medium;
 import org.junit.Before;
 import org.junit.Test;
 import ru.alex_malishev.base.linkedlist.ListNode;
+import ru.alex_malishev.medium.linkedlist.NextGreaterNodeInLinkedList;
 
 import static org.junit.Assert.*;
 

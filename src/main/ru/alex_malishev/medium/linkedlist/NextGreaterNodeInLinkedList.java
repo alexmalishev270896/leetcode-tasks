@@ -1,4 +1,4 @@
-package ru.alex_malishev.medium;
+package ru.alex_malishev.medium.linkedlist;
 
 import ru.alex_malishev.base.linkedlist.ListNode;
 
